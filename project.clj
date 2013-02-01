@@ -1,4 +1,4 @@
-(defproject muir "0.1.0-SNAPSHOT"
+(defproject muir "0.1.0"
   :description " library for clojure source code translation via AST"
   :url "https://github.com/pallet/muir"
   :license {:name "Eclipse Public License"
