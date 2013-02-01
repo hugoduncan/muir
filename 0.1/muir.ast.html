@@ -2,26 +2,27 @@
   <head>
     <title>muir.ast documentation</title>
     <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <link href="css/codox-md.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/page_effects.js"></script>
   </head>
   <body>
     <header>
       <div id="header">
-        <h1 class="project-title">Muir 0.1.0-SNAPSHOT API documentation</h1>
+        <h1 class="project-title">Muir 0.1.1-SNAPSHOT API documentation</h1>
       </div>
     </header>
     <navigation>
       <div id="namespaces" class="sidebar">
         <h3>Namespaces</h3>
         <ul class="ns-links">
-          <li class="ns-link"><a href="muir.ast.html">muir.ast</a></li>
+          <li class="ns-list"><a class="ns-link ns-name" href="muir.ast.html">muir.ast</a></li>
         </ul>
       </div>
       <div id="vars" class="sidebar">
         <h3>Public Vars</h3>
         <ul class="ns-var-links">
-          <li class="ns-var-link"><a href="muir.ast.html#var-*traversal-fn*">*traversal-fn*</a></li><li class="ns-var-link"><a href="muir.ast.html#var-analyse-form">analyse-form</a></li><li class="ns-var-link"><a href="muir.ast.html#var-deep-merge">deep-merge</a></li><li class="ns-var-link"><a href="muir.ast.html#var-deftraversal">deftraversal</a></li><li class="ns-var-link"><a href="muir.ast.html#var-emit">emit</a></li><li class="ns-var-link"><a href="muir.ast.html#var-emit-fn-var">emit-fn-var</a></li><li class="ns-var-link"><a href="muir.ast.html#var-emit-node">emit-node</a></li><li class="ns-var-link"><a href="muir.ast.html#var-form-with-metadata">form-with-metadata</a></li><li class="ns-var-link"><a href="muir.ast.html#var-implement-traversal-node">implement-traversal-node</a></li><li class="ns-var-link"><a href="muir.ast.html#var-traverse">traverse</a></li><li class="ns-var-link"><a href="muir.ast.html#var-unwrap-ast">unwrap-ast</a></li><li class="ns-var-link"><a href="muir.ast.html#var-update-node">update-node</a></li><li class="ns-var-link"><a href="muir.ast.html#var-update-node-seq">update-node-seq</a></li><li class="ns-var-link"><a href="muir.ast.html#var-with-emit-fn">with-emit-fn</a></li><li class="ns-var-link"><a href="muir.ast.html#var-with-traversal-fn">with-traversal-fn</a></li>
+          <li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-*traversal-fn*">*traversal-fn*</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-analyse-form">analyse-form</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-deep-merge">deep-merge</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-deftraversal">deftraversal</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-emit">emit</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-emit-fn-var">emit-fn-var</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-emit-node">emit-node</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-form-with-metadata">form-with-metadata</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-implement-traversal-node">implement-traversal-node</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-traverse">traverse</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-unwrap-ast">unwrap-ast</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-update-node">update-node</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-update-node-seq">update-node-seq</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-with-emit-fn">with-emit-fn</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="muir.ast.html#var-with-traversal-fn">with-traversal-fn</a></li>
         </ul>
       </div>
     </navigation>
@@ -35,14 +36,16 @@ traversal, and an open coded AST to form function.</p>
 </div>
         <div class="ns-vars">
           <div class="public">
-            <h3 id="var-*traversal-fn*">*traversal-fn*</h3>
+            <h3><a id="var-*traversal-fn*" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L121">*traversal-fn*</a></h3>
+            <h4 class="var-type var" id="var-type">var</h4>
             
             
             
             <div class="doc"><p>Provides a customisation point for the traversal</p>
 </div>
           </div><div class="public">
-            <h3 id="var-analyse-form">analyse-form</h3>
+            <h3><a id="var-analyse-form" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L37">analyse-form</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[nsym form]</div>
             
             
@@ -50,14 +53,16 @@ traversal, and an open coded AST to form function.</p>
 anonymous function definition of no arguments, and a call to that function.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-deep-merge">deep-merge</h3>
+            <h3><a id="var-deep-merge" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L110">deep-merge</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[&amp; ms]</div>
             
             
             <div class="doc"><p>Recursively merge maps.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-deftraversal">deftraversal</h3>
+            <h3><a id="var-deftraversal" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L204">deftraversal</a></h3>
+            <h4 class="var-type macro" id="var-type">macro</h4>
             <div class="usage">[name key-sequence-map pd-keys]</div>
             
             
@@ -68,35 +73,40 @@ should be passed down to each child node during the traversal. The generated
 traversal passes no map to the parent nodes.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-emit">emit</h3>
+            <h3><a id="var-emit" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L443">emit</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[ast emitter]</div>
             
             
             <div class="doc"><p>Traverse the given ast using the specified traversal function.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-emit-fn-var">emit-fn-var</h3>
+            <h3><a id="var-emit-fn-var" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L239">emit-fn-var</a></h3>
+            <h4 class="var-type var" id="var-type">var</h4>
             
             
             
             <div class="doc"><p>Provides a customisation point for the output</p>
 </div>
           </div><div class="public">
-            <h3 id="var-emit-node">emit-node</h3>
+            <h3><a id="var-emit-node" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L257">emit-node</a></h3>
+            <h4 class="var-type var" id="var-type">var</h4>
             
             
             
             <div class="doc"><p>Output a transformed plan function</p>
 </div>
           </div><div class="public">
-            <h3 id="var-form-with-metadata">form-with-metadata</h3>
+            <h3><a id="var-form-with-metadata" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L451">form-with-metadata</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[form {:keys [env], :as ast-node}]</div>
             
             
             <div class="doc"><p>Apply the AST node's metadata to the given <code>form</code>.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-implement-traversal-node">implement-traversal-node</h3>
+            <h3><a id="var-implement-traversal-node" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L182">implement-traversal-node</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[name kw key-seq pd-keys]</div>
             
             
@@ -104,21 +114,24 @@ traversal passes no map to the parent nodes.</p>
 visits, and pushes the selected keys down into the children.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-traverse">traverse</h3>
+            <h3><a id="var-traverse" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L131">traverse</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[ast multi]</div>
             
             
             <div class="doc"><p>Traverse the given ast using the specified traversal function.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-unwrap-ast">unwrap-ast</h3>
+            <h3><a id="var-unwrap-ast" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L462">unwrap-ast</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[ast]</div>
             
             
             <div class="doc"><p>Remove the (fn []) wrapper added by analyze.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-update-node">update-node</h3>
+            <h3><a id="var-update-node" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L143">update-node</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[ast-node kw f pd-keys]</div>
             
             
@@ -130,7 +143,8 @@ applied to the child node merged with the <code>ast-node</code> keys specified b
 and a map which is merged into the parent node.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-update-node-seq">update-node-seq</h3>
+            <h3><a id="var-update-node-seq" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L158">update-node-seq</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
             <div class="usage">[ast-node kw f pd-keys]</div>
             
             
@@ -142,14 +156,16 @@ the <code>ast-node</code> keys specified by <code>pd-keys</code>.  It is expecte
 containing the modified node, and a map which is merged into the parent node.</p>
 </div>
           </div><div class="public">
-            <h3 id="var-with-emit-fn">with-emit-fn</h3>
+            <h3><a id="var-with-emit-fn" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L249">with-emit-fn</a></h3>
+            <h4 class="var-type macro" id="var-type">macro</h4>
             <div class="usage">[f &amp; body]</div>
             
             
             <div class="doc"><p>Define the dispatch function for emit</p>
 </div>
           </div><div class="public">
-            <h3 id="var-with-traversal-fn">with-traversal-fn</h3>
+            <h3><a id="var-with-traversal-fn" class="source var-name" href="https://github.com/hugoduncan/muir/blob/develop/src/muir/ast.clj#L125">with-traversal-fn</a></h3>
+            <h4 class="var-type macro" id="var-type">macro</h4>
             <div class="usage">[f &amp; body]</div>
             
             
