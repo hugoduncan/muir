@@ -19,6 +19,12 @@ Available in [clojars](http://clojars.org/muir).
 :dependencies [[muir "0.1.0"]
 ```
 
+## Generated Documentaion
+
+[API docs](http://hugoduncan.github.com/muir/0.1/index.html)
+
+[Annotated Source](http://hugoduncan.github.com/muir/0.1/uberdoc.html)
+
 ## Usage
 
 ### Analyse
@@ -99,6 +105,12 @@ local bindings, for example.
 
 The `deftraversal` macro also allows the specification of a traversal order for
 child nodes.
+
+### Node Creation
+
+The `op` multimethod allows for a simpler creation of AST nodes. At present,
+this multi-method is far from complete.
+
 
 ## License
 
