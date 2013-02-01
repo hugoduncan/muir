@@ -1,7 +1,9 @@
 {:doc
- {:dependencies [[codox-md "0.1.0"]]
+ {:dependencies [[codox-md "0.2.0"]]
   :codox {:writer codox-md.writer/write-docs
-          :output-dir "doc/0.1/"}
+          :output-dir "doc/0.1/"
+          :src-dir-uri "https://github.com/hugoduncan/muir/blob/develop"
+          :src-linenum-anchor-prefix "L"}
   :aliases {"marg" ["marg" "-d" "doc/0.1/"]
             "doc" ["do" "doc," "marg" "-d" "doc/0.1/"]}}
  :release
