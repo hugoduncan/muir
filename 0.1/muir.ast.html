@@ -1,0 +1,164 @@
+<html lang="en">
+  <head>
+    <title>muir.ast documentation</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/page_effects.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <h1 class="project-title">Muir 0.1.0-SNAPSHOT API documentation</h1>
+      </div>
+    </header>
+    <navigation>
+      <div id="namespaces" class="sidebar">
+        <h3>Namespaces</h3>
+        <ul class="ns-links">
+          <li class="ns-link"><a href="muir.ast.html">muir.ast</a></li>
+        </ul>
+      </div>
+      <div id="vars" class="sidebar">
+        <h3>Public Vars</h3>
+        <ul class="ns-var-links">
+          <li class="ns-var-link"><a href="muir.ast.html#var-*traversal-fn*">*traversal-fn*</a></li><li class="ns-var-link"><a href="muir.ast.html#var-analyse-form">analyse-form</a></li><li class="ns-var-link"><a href="muir.ast.html#var-deep-merge">deep-merge</a></li><li class="ns-var-link"><a href="muir.ast.html#var-deftraversal">deftraversal</a></li><li class="ns-var-link"><a href="muir.ast.html#var-emit">emit</a></li><li class="ns-var-link"><a href="muir.ast.html#var-emit-fn-var">emit-fn-var</a></li><li class="ns-var-link"><a href="muir.ast.html#var-emit-node">emit-node</a></li><li class="ns-var-link"><a href="muir.ast.html#var-form-with-metadata">form-with-metadata</a></li><li class="ns-var-link"><a href="muir.ast.html#var-implement-traversal-node">implement-traversal-node</a></li><li class="ns-var-link"><a href="muir.ast.html#var-traverse">traverse</a></li><li class="ns-var-link"><a href="muir.ast.html#var-unwrap-ast">unwrap-ast</a></li><li class="ns-var-link"><a href="muir.ast.html#var-update-node">update-node</a></li><li class="ns-var-link"><a href="muir.ast.html#var-update-node-seq">update-node-seq</a></li><li class="ns-var-link"><a href="muir.ast.html#var-with-emit-fn">with-emit-fn</a></li><li class="ns-var-link"><a href="muir.ast.html#var-with-traversal-fn">with-traversal-fn</a></li>
+        </ul>
+      </div>
+    </navigation>
+    <article>
+      <div id="content" class="namespace-docs">
+        <h2 class="namespace-title">muir.ast documentation</h2>
+        <div class="doc"><p>AST Transformation</p>
+
+<p>This is a wrapper for the analyze lib, which adds helpers, an open coded AST
+traversal, and an open coded AST to form function.</p>
+</div>
+        <div class="ns-vars">
+          <div class="public">
+            <h3 id="var-*traversal-fn*">*traversal-fn*</h3>
+            
+            
+            
+            <div class="doc"><p>Provides a customisation point for the traversal</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-analyse-form">analyse-form</h3>
+            <div class="usage">[nsym form]</div>
+            
+            
+            <div class="doc"><p>Return the AST map for a single form.  Note that the form is wrapped in a
+anonymous function definition of no arguments, and a call to that function.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-deep-merge">deep-merge</h3>
+            <div class="usage">[&amp; ms]</div>
+            
+            
+            <div class="doc"><p>Recursively merge maps.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-deftraversal">deftraversal</h3>
+            <div class="usage">[name key-sequence-map pd-keys]</div>
+            
+            
+            <div class="doc"><p>Defines a traversal multi-method.  The <code>key-sequence-map</code> is a map from AST
+node :op to a sequence of keywords, specifying a traversal order for child or
+child-seq nodes. <code>pd-keys</code> specifies a sequence of parent AST node keys that
+should be passed down to each child node during the traversal. The generated
+traversal passes no map to the parent nodes.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-emit">emit</h3>
+            <div class="usage">[ast emitter]</div>
+            
+            
+            <div class="doc"><p>Traverse the given ast using the specified traversal function.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-emit-fn-var">emit-fn-var</h3>
+            
+            
+            
+            <div class="doc"><p>Provides a customisation point for the output</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-emit-node">emit-node</h3>
+            
+            
+            
+            <div class="doc"><p>Output a transformed plan function</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-form-with-metadata">form-with-metadata</h3>
+            <div class="usage">[form {:keys [env], :as ast-node}]</div>
+            
+            
+            <div class="doc"><p>Apply the AST node's metadata to the given <code>form</code>.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-implement-traversal-node">implement-traversal-node</h3>
+            <div class="usage">[name kw key-seq pd-keys]</div>
+            
+            
+            <div class="doc"><p>Create a traversal method for a node that has a deterministic order of child
+visits, and pushes the selected keys down into the children.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-traverse">traverse</h3>
+            <div class="usage">[ast multi]</div>
+            
+            
+            <div class="doc"><p>Traverse the given ast using the specified traversal function.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-unwrap-ast">unwrap-ast</h3>
+            <div class="usage">[ast]</div>
+            
+            
+            <div class="doc"><p>Remove the (fn []) wrapper added by analyze.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-update-node">update-node</h3>
+            <div class="usage">[ast-node kw f pd-keys]</div>
+            
+            
+            <div class="doc"><p>Transforms a child in an AST node. Takes an AST node <code>ast-node</code>, a keyword
+<code>kw</code> identifying a child in that node, and a transformation function <code>f</code> and a
+sequence of node member keywords <code>pd-keys</code>.  The transformation function is
+applied to the child node merged with the <code>ast-node</code> keys specified by
+<code>pd-keys</code>.  It is expected to return a vector containing the modified node,
+and a map which is merged into the parent node.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-update-node-seq">update-node-seq</h3>
+            <div class="usage">[ast-node kw f pd-keys]</div>
+            
+            
+            <div class="doc"><p>Transforms a child sequence in an AST node. Takes an AST node <code>ast-node</code>, a
+keyword <code>kw</code> identifying a child sequence in that node, and a transformation
+function <code>f</code> and a sequence of node member keywords <code>pd-keys</code>.  The
+transformation function is applied to the child sequence's nodes merged with
+the <code>ast-node</code> keys specified by <code>pd-keys</code>.  It is expected to return a vector
+containing the modified node, and a map which is merged into the parent node.</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-with-emit-fn">with-emit-fn</h3>
+            <div class="usage">[f &amp; body]</div>
+            
+            
+            <div class="doc"><p>Define the dispatch function for emit</p>
+</div>
+          </div><div class="public">
+            <h3 id="var-with-traversal-fn">with-traversal-fn</h3>
+            <div class="usage">[f &amp; body]</div>
+            
+            
+            <div class="doc"><p>Define the dispatch function for traversal</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+
+</html>
