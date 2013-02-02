@@ -37,7 +37,7 @@ macroexpansion.
 (require '[muir.ast :refer :all])
 
 (defmacro form-ast [form]
-  (list 'quote (analyse-form (ns-name *ns*))))
+  (list 'quote (analyse-form (ns-name *ns*) form)))
 
 (def ast (form-ast (let [x 1] x)))
 
@@ -55,7 +55,7 @@ function.
 
 (defmacro identity-transform [form]
   (emit
-    (analyse-form (ns-name *ns*))
+    (analyse-form (ns-name *ns*) form)
     emit-node))
 ```
 
